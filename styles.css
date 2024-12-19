@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#certificate-container {
+    position: relative;
+    display: inline-block;
+}
+
+#certificate-image { 
+    display: block;
+    width: 600px; /* Ancho fijo de la imagen */
+    height: 400px; /* Alto fijo de la imagen */
+    object-fit: cover; /* Ajustar contenido si la imagen tiene proporciones diferentes */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+#certificate-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pacifico', cursive; /* Fuente manuscrita */
+    font-style: normal; /* No cursiva adicional, ya es manuscrita */
+    color: #3f51b5;
+    font-size: 28px; /* Tamaño adecuado para visibilidad */
+    text-shadow: 1px 1px 2px white;
+}
+
+.hidden {
+    display: none;
+}

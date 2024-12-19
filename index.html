@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Certificados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Genera tu certificado!</h1>
+        <form id="certificate-form">
+            <label for="name">Tu nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+            <button type="button" id="generate-button">Generar</button>
+        </form>
+        <div id="certificate-container" class="hidden">
+            <img id="certificate-image" src="./img.jpg" alt="Certificado">
+            <div id="certificate-text"></div>
+        </div>
+        <button onclick="exportDivAsImage()">Exportar como Imagen</button>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
